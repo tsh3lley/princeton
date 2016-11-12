@@ -1,0 +1,57 @@
+div#voteSection{
+	visibility: hidden;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbo{
+	text-align:center;
+}
+
+.title{
+	text-align: center;
+}
+
+.in{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0px;
+}
+
+.in-super{
+	margin-left: 35%;
+	margin-right: 35%;
+	padding: 0px;
+}
+
+#votebtn1{
+	margin-top: 20px;
+}
+
+#votebtn2{
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.voteTable .voteTableElement{
+	border: 1px dashed grey;
+    border-collapse: collapse;
+}
+
+.voteTableElement{
+	padding: 15px;
+}
+
+.voteTable{
+	text-align: center;
+	margin: auto;
+}
