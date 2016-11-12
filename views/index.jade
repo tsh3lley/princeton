@@ -55,60 +55,90 @@ html(ng-app = 'voteApp')
 							p 2
 						td.voteTableElement
 							p 3
+						td.voteTableElement
+							p 4
 
 					//	VOTES
 					tr.voteTableElement
 						//CANDIDATE
 						td.voteTableElement		
-							p Donald Trump
+							p {{candids[1]}}
 						//
 						td.voteTableElement
 							p
-								a.btn.btn-default#trumpVote1(ng-click="aPick('trumpVote1')") pick
+								a.btn.btn-default#r1c1(ng-click="aPick('r1c1')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#trumpVote2(ng-click="aPick('trumpVote2')") pick
+								a.btn.btn-default#r1c2(ng-click="aPick('r1c2')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#trumpVote3(ng-click="aPick('trumpVote3')") pick
+								a.btn.btn-default#r1c3(ng-click="aPick('r1c3')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r1c4(ng-click="aPick('r1c4')") pick
 
 
 						
 					tr.voteTableElement
 						//CANDIDATE
 						td.voteTableElement
-							p Hillary Clinton
+							p {{candids[2]}}
 						//
 						td.voteTableElement
 							p
-								a.btn.btn-default#hillaryVote1(ng-click="aPick('hillaryVote1')") pick
+								a.btn.btn-default#r2c1(ng-click="aPick('r2c1')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#hillaryVote2(ng-click="aPick('hillaryVote2')") pick
+								a.btn.btn-default#r2c2(ng-click="aPick('r2c2')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#hillaryVote3(ng-click="aPick('hillaryVote3')") pick
+								a.btn.btn-default#r2c3(ng-click="aPick('r2c3')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r2c4(ng-click="aPick('r2c4')") pick
 
 
 
 					tr.voteTableElement
 						//CANDIDATE
 						td.voteTableElement
-							p Bernie Sanders
+							p {{candids[3]}}
 						//
 						td.voteTableElement
 							p
-								a.btn.btn-default#bernieVote1(ng-click="aPick('bernieVote1')") pick
+								a.btn.btn-default#r3c1(ng-click="aPick('r3c1')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#bernieVote2(ng-click="aPick('bernieVote2')") pick
+								a.btn.btn-default#r3c2(ng-click="aPick('r3c2')") pick
 						td.voteTableElement
 							p
-								a.btn.btn-default#bernieVote3(ng-click="aPick('bernieVote3')") pick
+								a.btn.btn-default#r3c3(ng-click="aPick('r3c3')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r3c4(ng-click="aPick('r3c4')") pick
+
+
+					tr.voteTableElement
+						//CANDIDATE
+						td.voteTableElement
+							p {{candids[4]}}
+						//
+						td.voteTableElement
+							p
+								a.btn.btn-default#r4c1(ng-click="aPick('r4c1')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r4c2(ng-click="aPick('r4c2')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r4c3(ng-click="aPick('r4c3')") pick
+						td.voteTableElement
+							p
+								a.btn.btn-default#r4c4(ng-click="aPick('r4c4')") pick
 
 
 				p#votebtn2
-					a.btn.btn-success.btn-lg VOTE
+					a.btn.btn-success.btn-lg(ng-click="submitVote()") VOTE
 
 	script(src="/javascripts/voteCtrl.js")
 
